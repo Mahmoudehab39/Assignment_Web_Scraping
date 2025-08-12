@@ -8,14 +8,14 @@ soup = BeautifulSoup(page.content,"lxml")
 
 
 v = soup.find('iframe')
-li = [{'Youtube_link': v.get('src')}]
+d = {'Youtube_link': v.get('src')}
 
-print(li)
+print(d)
 
 # to view the result of the json 
-res = json.dumps(li, default=lambda x: list(x) if isinstance(x, tuple) else str(x), indent=2)
+res = json.dumps(d, default=lambda x: list(x) if isinstance(x, tuple) else str(x), indent=2)
 print(res)
 
 # to save the output in json file
 with open('Q5.json', 'w', encoding='utf-8') as f:
-    json.dump(li, f, ensure_ascii=False, indent=4)
+    json.dump(d, f, ensure_ascii=False, indent=4)
