@@ -1,0 +1,19 @@
+{
+    "Label": [
+        "Username:",
+        "Password:",
+        "Choose an option:",
+        "I agree to the terms and conditions"
+    ],
+    "Default_Values": [
+        "Option 1",
+        "Option 2",
+        "Option 3"
+    ],
+    "input_type": [
+        "text",
+        "password",
+        "checkbox",
+        "submit"
+    ]
+}
